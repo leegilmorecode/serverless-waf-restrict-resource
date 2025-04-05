@@ -1,0 +1,45 @@
+{
+  "info": {
+    "_postman_id": "cd6a8890-7ee2-4f86-ab4f-709d4e40661b",
+    "name": "api-gateway-waf-ip-allowlist",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "752706"
+  },
+  "item": [
+    {
+      "name": "POST open resource",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://{{your-rest-api-url}}/develop/open",
+          "protocol": "https",
+          "host": ["{{your-rest-api-url}}"],
+          "path": ["develop", "open"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST restricted resource",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://{{your-rest-api-url}}/develop/restricted",
+          "protocol": "https",
+          "host": ["{{your-rest-api-url}}"],
+          "path": ["develop", "restricted"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "your-rest-api-url",
+      "value": "your-rest-api.execute-api.your-region.amazonaws.com",
+      "type": "default"
+    }
+  ]
+}
